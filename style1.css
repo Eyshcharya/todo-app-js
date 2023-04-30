@@ -1,0 +1,133 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+body{
+ min-height: 100vh;
+ background-color: black;
+ background-image: url(./R.png);
+ background-size: cover;
+ color: white;
+}
+
+header,main{
+ padding: 2rem 2rem;
+ max-width: 100vw;
+ width: 100vw;
+ text-align: center;
+}
+
+header h1{
+ color: white;
+ -webkit-text-stroke: 1px yellow;
+ font-size: 2.4rem;
+ margin-bottom: 2rem;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#form{
+display: flex;
+justify-content: center;
+}
+input,button{
+ appearance: none;
+ outline: none;
+ background: none;
+ border: none;
+ padding: 0.3rem;
+ color: white;
+}
+#newTaskInput{
+   padding-left: 0.5rem;
+   min-width: 40vw;
+    margin-right: 1rem;
+    text-transform: capitalize;
+    color: white;
+    border-style: double;
+     border-radius: 1rem;
+      border: double white;
+}
+
+#newTaskInput:hover {
+ background-color: rgba(161, 158, 158, 0.252);
+ /* font-family: cursive; */
+}
+
+#enterNewTask::placeholder {
+ color: rgba(245, 245, 245, 0.793);
+}
+
+#submitBtn {
+ cursor: pointer;
+  border-radius: 1rem;
+   border: double white;
+   min-width: 80px;
+}
+
+#submitBtn:hover {
+ font-weight: bold;
+}
+
+.taskList{
+
+ margin-right: 16%;
+ margin-left: 16%;
+}
+
+h2 {
+ margin-bottom: 1rem;
+ 
+ color: white;
+ -webkit-text-stroke: 0.5px silver;
+ font-weight: 100;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: larger;
+ color: rgb(175, 175, 175);
+}
+
+
+#tasks .task{
+ align-content: center;
+ display: flex;
+ justify-content: space-between;
+ border-radius:1rem ;
+ background-color: rgb(42, 42, 42);
+ margin-bottom: 1rem;
+ padding-left:  0.8rem;
+}
+
+.task .content {
+ flex: 1 1 0%;
+}
+ .content .text{
+ 
+ text-align: left;
+ display: block;
+ text-transform: inherit;
+}
+.text::placeholder{
+ background-color: rgb(42, 42, 42);
+}
+
+.actions{
+ font-size: 1.25rem;
+ display: flex;
+ cursor: pointer;
+ margin:0 0.5rem;
+
+}
+.edit {
+ color: lightblue;
+
+}
+
+.delete {
+ color: lightpink;
+}
+.edit:hover {
+ color: aqua;
+}
+
+.delete:hover {
+ color: crimson;
+}
