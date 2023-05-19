@@ -1,9 +1,7 @@
 const form = document.querySelector('#form');
 const input = document.querySelector('#newTaskInput');
 const list = document.querySelector('#tasks');
-const taskArray = localStorage.getItem('taskValue')
-  ? JSON.parse(localStorage.getItem('taskValue'))
-  : [];
+const taskArray = localStorage.getItem('taskValue');
 
 form.addEventListener('submit', function anon(e) {
   e.preventDefault();
@@ -20,7 +18,6 @@ form.addEventListener('submit', function anon(e) {
     taskArray.push(input.value);
     localStorage.setItem('taskValue', JSON.stringify(taskArray));
   }
-  console.log(taskArray);
 
   const task = document.createElement('div');
   task.classList.add('task');
